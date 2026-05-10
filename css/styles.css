@@ -63,7 +63,6 @@ button {
 .container {
     width: 100%;
     max-width: 320px;
-    padding: 0 16px;
     margin: 0 auto;
 }
 
@@ -77,13 +76,12 @@ button {
 @media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
-        padding: 0 15px;
         margin: 0 auto;
     }
 }
 
 
-.header-cont{
+.header-m{
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -149,7 +147,8 @@ button {
 
    .adress-link {
        font-style: normal;
-       display: block;
+       display: flex;
+       flex-direction: column;
        gap: 12px;
    }
 
@@ -228,16 +227,10 @@ button {
     }
 
         .adress-link {
-            font-style: normal;
-            display: flex;
             gap: 40px;
+            flex-direction: row;
+            align-items: center;
         }
-
-    .address-link {
-        flex-direction: row;
-        align-items: center;
-        gap: 40px;
-    }
 
     .link {
         display: block;
@@ -250,6 +243,18 @@ button {
     }
 }
 
+
+.title-section {
+    padding: 72px 0;
+    background: #2e2f42;
+    background-image:
+        linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url("../images/people-office.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 .mobile-menu {
     position: fixed;
@@ -672,7 +677,7 @@ button {
 
 @media screen and (min-width: 1158px) {
 
-    .team-list {
+    .team {
         flex-wrap: nowrap;
         gap: 24px;
     }
