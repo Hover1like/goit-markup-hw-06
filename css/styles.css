@@ -136,7 +136,7 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-    .mbutton-btn {
+    .mbutton {
         display: none;
     }
 
@@ -164,6 +164,7 @@ button {
     }
 
     .fast-travel {
+        margin-left: auto;
         display: block;
         padding: 24px 0;
         font-weight: 500;
