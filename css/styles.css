@@ -61,6 +61,7 @@ button {
 
 
 .container {
+    padding: 0 16px;
     width: 100%;
     max-width: 320px;
     margin: 0 auto;
@@ -77,6 +78,7 @@ button {
     .container {
         max-width: 1158px;
         margin: 0 auto;
+        padding: 0 15px;
     }
 }
 
@@ -1208,7 +1210,7 @@ button {
 
 }
 
-.agree-conditions:checked+.styled-checkbox {
+.modal-label-checkbox .agree-conditions:checked+.styled-checkbox {
     border-radius: 2px;
     background-color: #404bbf;
     border: 1px solid #404bbf;
